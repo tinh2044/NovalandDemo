@@ -16,16 +16,6 @@ from pymongo import MongoClient
 from bson import ObjectId
 from datetime import datetime, timezone
 
-MONGODB_URI = (
-    "mongodb+srv://tinhdev:tinh23122004@novaland.rpfrsmx.mongodb.net/?appName=Novaland"
-)
-DATABASE_NAME = "novaland_tour"
-
-CLOUDINARY_CLOUD_NAME = "dd3pxk4zr"
-CLOUDINARY_API_KEY = "151113475398569"
-CLOUDINARY_API_SECRET = "6QhIl4YW_Iwsu6I_V6AvmOi7hP0"
-
-
 # Đường dẫn ảnh scenes
 IMAGES_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "public", "panoramas")
 
