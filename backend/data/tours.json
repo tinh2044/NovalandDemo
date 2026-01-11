@@ -1,0 +1,9 @@
+[
+  {
+    "_id": {"$oid": "6787a1b2c3d4e5f6a7b8c9d0"},
+    "name": "Tour Ảo Novaland Resort",
+    "entry_scene": {"$oid": "6787a1b2c3d4e5f6a7b8c9d1"},
+    "created_at": {"$date": "2024-01-15T10:00:00Z"},
+    "updated_at": {"$date": "2024-01-15T10:00:00Z"}
+  }
+]

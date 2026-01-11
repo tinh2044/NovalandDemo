@@ -1,0 +1,138 @@
+[
+  {
+    "_id": {"$oid": "6787b1b2c3d4e5f6a7b8c901"},
+    "scene_id": {"$oid": "6787a1b2c3d4e5f6a7b8c9d1"},
+    "type": "click",
+    "position": {"x": -320, "y": 40, "z": 239},
+    "target_scene": {"$oid": "6787a1b2c3d4e5f6a7b8c9d2"},
+    "label": "Lối vào sảnh"
+  },
+  {
+    "_id": {"$oid": "6787b1b2c3d4e5f6a7b8c902"},
+    "scene_id": {"$oid": "6787a1b2c3d4e5f6a7b8c9d1"},
+    "type": "click",
+    "position": {"x": 145, "y": 0, "z": 373},
+    "target_scene": {"$oid": "6787a1b2c3d4e5f6a7b8c9d3"},
+    "label": "Đến đường nội khu"
+  },
+  {
+    "_id": {"$oid": "6787b1b2c3d4e5f6a7b8c903"},
+    "scene_id": {"$oid": "6787a1b2c3d4e5f6a7b8c9d1"},
+    "type": "click",
+    "position": {"x": -167, "y": -40, "z": -364},
+    "target_scene": {"$oid": "6787a1b2c3d4e5f6a7b8c9d3"},
+    "label": "Lối ra đường"
+  },
+  {
+    "_id": {"$oid": "6787b1b2c3d4e5f6a7b8c904"},
+    "scene_id": {"$oid": "6787a1b2c3d4e5f6a7b8c9d1"},
+    "type": "click",
+    "position": {"x": 0, "y": 118, "z": 382},
+    "target_scene": {"$oid": "6787a1b2c3d4e5f6a7b8c9d4"},
+    "label": "Toàn cảnh"
+  },
+  {
+    "_id": {"$oid": "6787b1b2c3d4e5f6a7b8c905"},
+    "scene_id": {"$oid": "6787a1b2c3d4e5f6a7b8c9d2"},
+    "type": "click",
+    "position": {"x": -380, "y": 0, "z": 115},
+    "target_scene": {"$oid": "6787a1b2c3d4e5f6a7b8c9d1"},
+    "label": "Ra khu ngoài tòa nhà"
+  },
+  {
+    "_id": {"$oid": "6787b1b2c3d4e5f6a7b8c906"},
+    "scene_id": {"$oid": "6787a1b2c3d4e5f6a7b8c9d2"},
+    "type": "click",
+    "position": {"x": 351, "y": -40, "z": -192},
+    "target_scene": {"$oid": "6787a1b2c3d4e5f6a7b8c9d1"},
+    "label": "Lối ra ngoài"
+  },
+  {
+    "_id": {"$oid": "6787b1b2c3d4e5f6a7b8c907"},
+    "scene_id": {"$oid": "6787a1b2c3d4e5f6a7b8c9d2"},
+    "type": "click",
+    "position": {"x": 28, "y": 0, "z": -399},
+    "target_scene": {"$oid": "6787a1b2c3d4e5f6a7b8c9d3"},
+    "label": "Đến đường nội khu"
+  },
+  {
+    "_id": {"$oid": "6787b1b2c3d4e5f6a7b8c908"},
+    "scene_id": {"$oid": "6787a1b2c3d4e5f6a7b8c9d2"},
+    "type": "click",
+    "position": {"x": 216, "y": 40, "z": 336},
+    "target_scene": {"$oid": "6787a1b2c3d4e5f6a7b8c9d3"},
+    "label": "Lối ra đường →"
+  },
+  {
+    "_id": {"$oid": "6787b1b2c3d4e5f6a7b8c909"},
+    "scene_id": {"$oid": "6787a1b2c3d4e5f6a7b8c9d2"},
+    "type": "click",
+    "position": {"x": 0, "y": 118, "z": 382},
+    "target_scene": {"$oid": "6787a1b2c3d4e5f6a7b8c9d4"},
+    "label": "Toàn cảnh từ trên cao"
+  },
+  {
+    "_id": {"$oid": "6787b1b2c3d4e5f6a7b8c910"},
+    "scene_id": {"$oid": "6787a1b2c3d4e5f6a7b8c9d3"},
+    "type": "click",
+    "position": {"x": -320, "y": 0, "z": 240},
+    "target_scene": {"$oid": "6787a1b2c3d4e5f6a7b8c9d1"},
+    "label": "Đến khu ngoài tòa nhà"
+  },
+  {
+    "_id": {"$oid": "6787b1b2c3d4e5f6a7b8c911"},
+    "scene_id": {"$oid": "6787a1b2c3d4e5f6a7b8c9d3"},
+    "type": "click",
+    "position": {"x": 336, "y": -40, "z": -216},
+    "target_scene": {"$oid": "6787a1b2c3d4e5f6a7b8c9d1"},
+    "label": "Tòa nhà chính →"
+  },
+  {
+    "_id": {"$oid": "6787b1b2c3d4e5f6a7b8c912"},
+    "scene_id": {"$oid": "6787a1b2c3d4e5f6a7b8c9d3"},
+    "type": "click",
+    "position": {"x": 351, "y": 0, "z": -192},
+    "target_scene": {"$oid": "6787a1b2c3d4e5f6a7b8c9d2"},
+    "label": "Đến sảnh trong tòa nhà"
+  },
+  {
+    "_id": {"$oid": "6787b1b2c3d4e5f6a7b8c913"},
+    "scene_id": {"$oid": "6787a1b2c3d4e5f6a7b8c9d3"},
+    "type": "click",
+    "position": {"x": -78, "y": 40, "z": 392},
+    "target_scene": {"$oid": "6787a1b2c3d4e5f6a7b8c9d2"},
+    "label": "Sảnh trong →"
+  },
+  {
+    "_id": {"$oid": "6787b1b2c3d4e5f6a7b8c914"},
+    "scene_id": {"$oid": "6787a1b2c3d4e5f6a7b8c9d3"},
+    "type": "click",
+    "position": {"x": 0, "y": 100, "z": 387},
+    "target_scene": {"$oid": "6787a1b2c3d4e5f6a7b8c9d4"},
+    "label": "Toàn cảnh từ trên cao"
+  },
+  {
+    "_id": {"$oid": "6787b1b2c3d4e5f6a7b8c915"},
+    "scene_id": {"$oid": "6787a1b2c3d4e5f6a7b8c9d4"},
+    "type": "click",
+    "position": {"x": -100, "y": -280, "z": 260},
+    "target_scene": {"$oid": "6787a1b2c3d4e5f6a7b8c9d1"},
+    "label": "Xuống khu ngoài tòa nhà"
+  },
+  {
+    "_id": {"$oid": "6787b1b2c3d4e5f6a7b8c916"},
+    "scene_id": {"$oid": "6787a1b2c3d4e5f6a7b8c9d4"},
+    "type": "click",
+    "position": {"x": 0, "y": -300, "z": 265},
+    "target_scene": {"$oid": "6787a1b2c3d4e5f6a7b8c9d2"},
+    "label": "Xuống sảnh trong tòa nhà"
+  },
+  {
+    "_id": {"$oid": "6787b1b2c3d4e5f6a7b8c917"},
+    "scene_id": {"$oid": "6787a1b2c3d4e5f6a7b8c9d4"},
+    "type": "click",
+    "position": {"x": 100, "y": -280, "z": 260},
+    "target_scene": {"$oid": "6787a1b2c3d4e5f6a7b8c9d3"},
+    "label": "Xuống đường nội khu"
+  }
+]

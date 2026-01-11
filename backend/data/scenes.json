@@ -1,0 +1,34 @@
+[
+  {
+    "_id": {"$oid": "6787a1b2c3d4e5f6a7b8c9d1"},
+    "tour_id": {"$oid": "6787a1b2c3d4e5f6a7b8c9d0"},
+    "name": "Khu Ngoài Tòa Nhà",
+    "description": "Không gian bên ngoài tòa tháp, với bãi cỏ rộng và tầm nhìn ra các tuyến đường xung quanh.",
+    "panorama_url": "/panoramas/panorama-lobby.png",
+    "initial_view": {"yaw": 0, "pitch": 0, "fov": 100}
+  },
+  {
+    "_id": {"$oid": "6787a1b2c3d4e5f6a7b8c9d2"},
+    "tour_id": {"$oid": "6787a1b2c3d4e5f6a7b8c9d0"},
+    "name": "Sảnh Trong Tòa Nhà",
+    "description": "Khu sảnh nội khu với ghế nghỉ, cây xanh và không gian mở ngay chân tòa tháp.",
+    "panorama_url": "/panoramas/panorama-pool.png",
+    "initial_view": {"yaw": 0.5, "pitch": 0, "fov": 100}
+  },
+  {
+    "_id": {"$oid": "6787a1b2c3d4e5f6a7b8c9d3"},
+    "tour_id": {"$oid": "6787a1b2c3d4e5f6a7b8c9d0"},
+    "name": "Đường Nội Khu",
+    "description": "Tuyến đường nội khu lát đá và nhựa chạy quanh dự án, kết nối tới sảnh và không gian bên ngoài.",
+    "panorama_url": "/panoramas/panorama-garden.png",
+    "initial_view": {"yaw": 0, "pitch": 0, "fov": 100}
+  },
+  {
+    "_id": {"$oid": "6787a1b2c3d4e5f6a7b8c9d4"},
+    "tour_id": {"$oid": "6787a1b2c3d4e5f6a7b8c9d0"},
+    "name": "Toàn Cảnh Từ Trên Cao",
+    "description": "Ngắm nhìn toàn bộ khu đô thị Novaland từ trên cao: tòa tháp chính, cảnh quan và mặt nước.",
+    "panorama_url": "/panoramas/panorama-suite.png",
+    "initial_view": {"yaw": 0, "pitch": 0.5, "fov": 90}
+  }
+]

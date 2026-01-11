@@ -1,0 +1,40 @@
+# ================================================
+# MONGODB IMPORT COMMANDS
+# ================================================
+# Thay thế các giá trị sau:
+#   <password>       = password của bạn
+#   <database_name>  = tên database (ví dụ: novaland_tour)
+# ================================================
+
+# 1. Import Tours collection
+mongoimport --uri "mongodb+srv://tinhdev:<password>@novaland.rpfrsmx.mongodb.net/<database_name>" --collection tours --type json --jsonArray --file backend/data/tours.json
+
+# 2. Import Scenes collection
+mongoimport --uri "mongodb+srv://tinhdev:<password>@novaland.rpfrsmx.mongodb.net/<database_name>" --collection scenes --type json --jsonArray --file backend/data/scenes.json
+
+# 3. Import Hotspots collection
+mongoimport --uri "mongodb+srv://tinhdev:<password>@novaland.rpfrsmx.mongodb.net/<database_name>" --collection hotspots --type json --jsonArray --file backend/data/hotspots.json
+
+
+# ================================================
+# VÍ DỤ VỚI FULL PATH (Windows)
+# ================================================
+
+# mongoimport --uri "mongodb+srv://tinhdev:YOUR_PASSWORD@novaland.rpfrsmx.mongodb.net/novaland_tour" --collection tours --type json --jsonArray --file "D:\FE-Projects\NovalandDemo\backend\data\tours.json"
+
+# mongoimport --uri "mongodb+srv://tinhdev:YOUR_PASSWORD@novaland.rpfrsmx.mongodb.net/novaland_tour" --collection scenes --type json --jsonArray --file "D:\FE-Projects\NovalandDemo\backend\data\scenes.json"
+
+# mongoimport --uri "mongodb+srv://tinhdev:YOUR_PASSWORD@novaland.rpfrsmx.mongodb.net/novaland_tour" --collection hotspots --type json --jsonArray --file "D:\FE-Projects\NovalandDemo\backend\data\hotspots.json"
+
+
+# ================================================
+# ID MAPPING (Để tham khảo)
+# ================================================
+# Tour ID:    6787a1b2c3d4e5f6a7b8c9d0
+#
+# Scene IDs:
+#   lobby  -> 6787a1b2c3d4e5f6a7b8c9d1
+#   pool   -> 6787a1b2c3d4e5f6a7b8c9d2
+#   garden -> 6787a1b2c3d4e5f6a7b8c9d3
+#   suite  -> 6787a1b2c3d4e5f6a7b8c9d4
+# ================================================

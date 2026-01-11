@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+motor
+pymongo
+cloudinary
+python-multipart
+python-dotenv
+pydantic
+pydantic-settings
+dependency-injector

@@ -1,0 +1,3 @@
+from app.repository.tour_repository import TourRepository
+from app.repository.scene_repository import SceneRepository
+from app.repository.hotspot_repository import HotspotRepository
