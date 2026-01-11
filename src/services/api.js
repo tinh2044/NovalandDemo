@@ -1,4 +1,4 @@
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://novalanddemo.onrender.com';
+const API_BASE_URL = 'https://novalanddemo.onrender.com/api/v1';
 
 async function fetchAPI(endpoint, options = {}) {
   const url = `${API_BASE_URL}${endpoint}`;
