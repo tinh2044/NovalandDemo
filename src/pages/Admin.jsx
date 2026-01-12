@@ -109,6 +109,7 @@ const Admin = () => {
   // Handle scene CRUD
   const handleCreateScene = async (formData) => {
     try {
+      console.log(formData)
       await sceneAPI.create(formData);
       showNotification('Tạo scene thành công!');
       loadScenes(selectedTour.id);
