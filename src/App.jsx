@@ -2,7 +2,8 @@ import { useState, useCallback, useEffect } from 'react';
 import Viewer from './components/Viewer';
 import { tourAPI } from './services/api';
 
-const DEFAULT_TOUR_ID = '6787a1b2c3d4e5f6a7b8c9d0';
+// const DEFAULT_TOUR_ID = '6787a1b2c3d4e5f6a7b8c9d0';
+const DEFAULT_TOUR_ID = '69661dfa5a3d3057d1ec3e3b';
 
 function App() {
   const [tourData, setTourData] = useState(null);

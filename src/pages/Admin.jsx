@@ -229,13 +229,13 @@ const Admin = () => {
         {/* Sidebar */}
         <aside className="admin-sidebar">
           <nav className="admin-nav">
-            {/* <button
+            <button
               className={`nav-item ${activeTab === 'tours' ? 'active' : ''}`}
               onClick={() => setActiveTab('tours')}
             >
               <HiOutlineMap />
               <span>Tours</span>
-            </button> */}
+            </button>
             <button
               className={`nav-item ${activeTab === 'scenes' ? 'active' : ''}`}
               onClick={() => setActiveTab('scenes')}
@@ -255,7 +255,7 @@ const Admin = () => {
           </nav>
 
           {/* Tour Selection */}
-          {/* <div className="sidebar-section">
+          <div className="sidebar-section">
             <h3>Tour đang chọn</h3>
             <select
               value={selectedTour?.id || ''}
@@ -269,7 +269,7 @@ const Admin = () => {
                 <option key={tour.id} value={tour.id}>{tour.name}</option>
               ))}
             </select>
-          </div> */}
+          </div>
 
           {/* Scene Selection */}
           {selectedTour && (
@@ -296,7 +296,7 @@ const Admin = () => {
         <main className="admin-main">
           {loading && <div className="loading-overlay">Đang tải...</div>}
 
-          {/* {
+          {
             activeTab === 'tours' && (
             <TourManager
               tours={tours}
@@ -307,7 +307,7 @@ const Admin = () => {
               onDelete={handleDeleteTour}
               scenes={scenes}
             />
-          )} */}
+          )}
 
           {activeTab === 'scenes' && selectedTour && (
             <SceneManager

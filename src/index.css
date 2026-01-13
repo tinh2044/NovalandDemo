@@ -456,10 +456,12 @@ html, body, #root {
 .admin-container {
   display: flex;
   flex-direction: column;
+  height: 100vh;
   min-height: 100vh;
   background: var(--admin-bg);
   color: var(--admin-text);
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: hidden;
 }
 
 /* Notification */
@@ -545,6 +547,7 @@ html, body, #root {
   display: flex;
   flex: 1;
   overflow: hidden;
+  min-height: 0;
 }
 
 /* Sidebar */
@@ -633,8 +636,10 @@ html, body, #root {
 .admin-main {
   flex: 1;
   overflow-y: auto;
+  overflow-x: hidden;
   padding: 24px;
   position: relative;
+  min-height: 0;
 }
 
 .loading-overlay {
