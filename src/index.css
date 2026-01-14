@@ -112,6 +112,46 @@ html, body, #root {
   opacity: 0.9;
 }
 
+/* Back Button */
+.btn-back-scene {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: rgba(201, 169, 98, 0.2);
+  border: 2px solid var(--color-gold);
+  border-radius: 30px;
+  color: var(--color-gold);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s var(--transition-smooth);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-back-scene:hover {
+  background: var(--color-gold);
+  color: var(--color-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(201, 169, 98, 0.4);
+}
+
+.btn-back-scene:active {
+  transform: translateY(0);
+}
+
+.btn-back-scene svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+}
+
+.btn-back-scene span {
+  letter-spacing: 0.5px;
+}
+
 /* Scene Info */
 .scene-info {
   position: absolute;
@@ -253,13 +293,13 @@ html, body, #root {
 /* Controls Help */
 .controls-help {
   position: absolute;
-  bottom: 32px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 50;
   display: flex;
-  gap: 24px;
-  padding: 12px 24px;
+  gap: 14px;
+  padding: 8px 16px;
   background: rgba(0,0,0,0.6);
   border-radius: 30px;
   backdrop-filter: blur(10px);
@@ -375,6 +415,20 @@ html, body, #root {
   
   .logo {
     font-size: 1.25rem;
+  }
+  
+  .btn-back-scene {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+  
+  .btn-back-scene svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .btn-back-scene span {
+    display: none;
   }
   
   .scene-info {

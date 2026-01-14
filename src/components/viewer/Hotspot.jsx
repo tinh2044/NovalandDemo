@@ -3,12 +3,17 @@ import { useCallback } from 'react';
 /**
  * Component hiển thị một hotspot trên panorama
  */
-const Hotspot = ({ hotspot, onSceneChange, setHotspotRef }) => {
+const Hotspot = ({ hotspot, currentSceneId, onSceneChange, setHotspotRef }) => {
   const handleClick = useCallback(() => {
     if (hotspot.type === 'click') {
-      onSceneChange(hotspot.targetScene);
+      // Sử dụng target_scene hoặc targetScene (tùy format dữ liệu)
+      const targetSceneId = hotspot.target_scene || hotspot.targetScene;
+      if (targetSceneId) {
+        // Truyền scene_id hiện tại để lưu vào history
+        onSceneChange(targetSceneId, currentSceneId, false);
+      }
     }
-  }, [hotspot, onSceneChange]);
+  }, [hotspot, currentSceneId, onSceneChange]);
 
   return (
     <div

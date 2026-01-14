@@ -10,7 +10,7 @@ import FovDisplay from './viewer/FovDisplay';
 /**
  * Component chính để hiển thị 360° panorama viewer
  */
-const Viewer = ({ scene, onSceneChange, onReady }) => {
+const Viewer = ({ scene, currentSceneId, onSceneChange, onReady }) => {
   const containerRef = useRef(null);
   const [currentFov, setCurrentFov] = useState(75);
 
@@ -50,12 +50,13 @@ const Viewer = ({ scene, onSceneChange, onReady }) => {
         <Hotspot
           key={hotspot.id}
           hotspot={hotspot}
+          currentSceneId={currentSceneId}
           onSceneChange={onSceneChange}
           setHotspotRef={setHotspotRef}
         />
       ))}
 
-      <FovDisplay fov={currentFov} />
+      {/* <FovDisplay fov={currentFov} /> */}
     </>
   );
 };

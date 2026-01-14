@@ -11,6 +11,7 @@ function App() {
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [sceneHistory, setSceneHistory] = useState([]); // Stack để lưu lịch sử scene
 
   useEffect(() => {
     const loadTour = async () => {
@@ -36,10 +37,15 @@ function App() {
   const currentScene = tourData?.scenes?.[currentSceneId];
   const allScenes = tourData ? Object.values(tourData.scenes) : [];
 
-  const handleSceneChange = useCallback((targetSceneId) => {
+  const handleSceneChange = useCallback((targetSceneId, fromSceneId = null, isBack = false) => {
     if (targetSceneId === currentSceneId || isTransitioning) return;
     
     setIsTransitioning(true);
+    
+    // Lưu scene_id hiện tại vào history khi click hotspot (không phải back)
+    if (!isBack && fromSceneId && fromSceneId !== targetSceneId) {
+      setSceneHistory(prev => [...prev, fromSceneId]);
+    }
     
     setTimeout(() => {
       setCurrentSceneId(targetSceneId);
@@ -48,6 +54,19 @@ function App() {
       }, 100);
     }, 400);
   }, [currentSceneId, isTransitioning]);
+
+  const handleBack = useCallback(() => {
+    if (sceneHistory.length === 0 || isTransitioning) return;
+    
+    // Lấy scene cuối cùng trong history
+    const previousSceneId = sceneHistory[sceneHistory.length - 1];
+    
+    // Xóa scene cuối cùng khỏi history
+    setSceneHistory(prev => prev.slice(0, -1));
+    
+    // Chuyển về scene trước đó
+    handleSceneChange(previousSceneId, null, true);
+  }, [sceneHistory, isTransitioning, handleSceneChange]);
 
   const handleViewerReady = useCallback(() => {
   }, []);
@@ -84,11 +103,24 @@ function App() {
 
       <header className="tour-header">
         <div className="logo">NOVALAND</div>
+        {sceneHistory.length > 0 && (
+          <button 
+            className="btn-back-scene"
+            onClick={handleBack}
+            title="Quay lại scene trước"
+          >
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+            <span>Quay lại</span>
+          </button>
+        )}
       </header>
 
       {currentScene && (
         <Viewer
           scene={currentScene}
+          currentSceneId={currentSceneId}
           onSceneChange={handleSceneChange}
           onReady={handleViewerReady}
         />
